@@ -1,7 +1,8 @@
 import os
 import numpy as np
 import sklearn.metrics as skmetrics
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import timeit
 import tensorflow.contrib.metrics as contrib_metrics
 import tensorflow.contrib.slim as contrib_slim

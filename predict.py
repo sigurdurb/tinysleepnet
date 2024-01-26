@@ -5,7 +5,8 @@ import os
 import numpy as np
 import shutil
 import sklearn.metrics as skmetrics
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from data import load_data, get_subject_files
 from model import TinySleepNet
